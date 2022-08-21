@@ -19,10 +19,17 @@ server.get('/123', (req,res) => {
 })
 
 server.get('/products', (req,res) => {
-    const products = require("./products");
+    //const products = JSON.stringify(require("./products"));
+    const products = (require("./products"));
+    //console.log(products);
+    //res.writeHead(200, { 'Content-Type': 'application/json'});
     res.send(products);
 })
 
+server.get('/:id', (req, res) => {
+    const { id } = req.params;
+    
+})
 
 
 
