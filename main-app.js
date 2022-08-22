@@ -8,10 +8,6 @@ server.set('views', './views');
 
 server.use(express.static('./pub'));
 
-const getProduct = ( id ) => {
-    const result = products.find(item => item.id === id);
-}
-
 // ############################################               Роути              ############################################
 
 server.get('/', (req,res) => {
@@ -30,11 +26,9 @@ server.get('/products', (req,res) => {
 server.get('/products/:id', (req, res) => {
     const { id } = req.params;
     const products = (require("./products"));
-    console.log(products.products_db[0]);
+
     const id_prod = Number(id);
-    console.log('id = ' + id + ' id_prod = ' + id_prod);
     const product = products.products_db.find(item => item.id === id_prod);
-    console.log('product: ', product);
 
     res.render('product', { product });
     //res.send('product id is: ' + id);

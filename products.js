@@ -1,7 +1,7 @@
 
 const products_db = [
     {id:1, title: "Ноутбук Lenovo V14 G2 ITL", price: "16999", picture: "/pic/nout.jpg"},
-    {id:2, title: "Комп\"ютер Artline Gaming X51 v07", price: "30999", picture: "/pic/komp.jpg"},
+    {id:2, title: "Комп\'ютер Artline Gaming X51 v07", price: "30999", picture: "/pic/komp.jpg"},
     {id:3, title: "Мобільний телефон Samsung Galaxy A32", price: "10399", picture: "/pic/telebon.jpg"},
     {id:4, title: "Планшет Lenovo Tab M8", price: "6799", picture: "/pic/planshet.jpg"},
     {id:5, title: "Кавомашина PHILIPS Series 1200", price: "13499", picture: "/pic/kava.jpg"},
